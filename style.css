@@ -1,70 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    color: #ffffff;
 }
 
 .hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: #007BFF;
-  color: white;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.ebook-mockup {
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(135deg, #ffffff, #e5e7eb);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    transform: perspective(1000px) rotateY(-20deg);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: white;
-  color: #007BFF;
-  text-decoration: none;
-  border-radius: 4px;
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ffffff;
+    color: #3b82f6;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
 }
 
-.features {
-  padding: 40px 20px;
-  background: #f4f4f4;
+.cta-button:hover {
+    transform: translateY(-3px);
 }
 
-.feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.feature {
-  flex: 1 1 200px;
-  margin: 10px;
-  padding: 20px;
-  background: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.benefit-list,
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.signup {
-  text-align: center;
-  padding: 40px 20px;
+.benefit, .testimonial {
+    background: #ffffff;
+    color: #333333;
+    border-radius: 16px;
+    padding: 30px;
+    flex: 1 1 220px;
+    max-width: 260px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.signup form input {
-  padding: 10px;
-  width: 250px;
-  max-width: 80%;
-  margin-right: 10px;
+.testimonial span {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #555555;
 }
 
-.signup form button {
-  padding: 10px 20px;
-  background: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.pricing {
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.pricing .price {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: white;
+    background: rgba(0,0,0,0.2);
+    padding: 40px 20px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
