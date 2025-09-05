@@ -8,41 +8,66 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="hero">
+    <div id="progress-bar"></div>
+    <nav class="navbar">
+        <a href="#hero" class="logo">ChatGPT for Growth</a>
+        <ul class="nav-links">
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#inside">What's Inside</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
         <div class="hero-content">
             <img src="util/cover.png" alt="ChatGPT for Growth eBook cover" class="ebook-mockup" />
             <div class="hero-text">
-                <h1>Work Less, Earn More, Achieve More with ChatGPT.</h1>
+                <h1>Work Less, Earn More with ChatGPT</h1>
                 <p>Leverage AI to accelerate your productivity, income, and personal growth.</p>
                 <a href="#pricing" class="cta-button">Get Your Copy Now</a>
             </div>
         </div>
     </header>
 
-    <section class="benefits">
-        <h2>What You'll Learn</h2>
+    <section id="benefits" class="benefits">
+        <h2>Benefits</h2>
         <div class="benefit-list">
             <div class="benefit">
-                <h3>Step-by-Step Guide</h3>
-                <p>Master ChatGPT with clear, actionable instructions.</p>
+                <div class="icon">⏱️</div>
+                <h3>Save Time</h3>
+                <p>Automate repetitive tasks with ready-made prompts.</p>
             </div>
             <div class="benefit">
-                <h3>Productivity Hacks</h3>
-                <p>Automate tasks and reclaim your time.</p>
+                <div class="icon">💰</div>
+                <h3>Boost Earnings</h3>
+                <p>Unlock new revenue opportunities powered by AI.</p>
             </div>
             <div class="benefit">
-                <h3>Earning Potential</h3>
-                <p>Turn AI skills into new income streams.</p>
-            </div>
-            <div class="benefit">
-                <h3>Growth Strategies</h3>
-                <p>Scale your projects with smart AI insights.</p>
+                <div class="icon">🧭</div>
+                <h3>Step-by-Step Guidance</h3>
+                <p>Follow clear workflows from idea to execution.</p>
             </div>
         </div>
     </section>
 
-    <section class="testimonials">
-        <h2>What Readers Say</h2>
+    <section id="inside" class="inside">
+        <h2>What's Inside</h2>
+        <ul class="inside-list">
+            <li>Curated prompts for marketing, sales, and productivity</li>
+            <li>Templates for emails, landing pages, and content creation</li>
+            <li>Case studies from real entrepreneurs using ChatGPT</li>
+        </ul>
+    </section>
+
+    <section class="mid-cta">
+        <h2>Ready to Grow Faster?</h2>
+        <a href="#pricing" class="cta-button">Download the eBook</a>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
         <div class="testimonial-list">
             <div class="testimonial">
                 <p>"This eBook transformed the way I work!"</p>
@@ -60,9 +85,32 @@
         <a href="#" class="cta-button">Get Your Copy Now</a>
     </section>
 
+    <section id="faq" class="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <button class="faq-question">Is this eBook beginner friendly?</button>
+            <div class="faq-answer">
+                <p>Yes, it starts with the basics and builds up to advanced strategies.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do I need prior AI experience?</button>
+            <div class="faq-answer">
+                <p>No experience required. The guide walks you through everything step by step.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What format is the eBook?</button>
+            <div class="faq-answer">
+                <p>The eBook is delivered as a downloadable PDF.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 ChatGPT for Growth</p>
+            <a href="#pricing" class="cta-button secondary">Get the eBook</a>
             <div class="social-links">
                 <a href="#">Twitter</a>
                 <a href="#">LinkedIn</a>
@@ -70,5 +118,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
