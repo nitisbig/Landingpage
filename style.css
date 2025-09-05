@@ -25,10 +25,11 @@ body {
 .ebook-mockup {
     width: 300px;
     height: 420px;
-    background: linear-gradient(135deg, #ffffff, #e5e7eb);
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     transform: perspective(1000px) rotateY(-20deg);
+    object-fit: cover;
+    display: block;
 }
 
 .hero-text {
